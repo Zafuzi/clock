@@ -1,0 +1,15 @@
+{
+  "update_url": "https://clients2.google.com/service/update2/crx",
+
+  "name": "HTML Clock",
+  "version": "1.1",
+  "manifest_version": 2,
+  "app": {
+    "background": {
+      "scripts": ["lib/js/background.js"]
+    }
+  },
+  "icons": {
+    "128": "lib/img/128.png"
+  }
+}
