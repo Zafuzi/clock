@@ -1,4 +1,11 @@
 {  
     "schemaVersion": 2,  
-    "dockerfilePath" :"./Dockerfile"
+    "dockerfileLines": [
+                        "FROM nginx:alpine",
+                        "RUN mkdir -p /usr/share/nginx/html",
+                        "WORKDIR /usr/share/nginx/html",
+						"COPY ./ /usr/share/nginx/html",
+                        "ENV PORT 80",
+                        "EXPOSE 80"
+    ]
 }
