@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Analog Clock</title>
+  <link rel="stylesheet" href="lib/styles/styles.css">
+  <style>
+    body, html{
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="" id="menu_toggle">&#9776;</a>
+    <nav>
+      <ul>
+        <li>
+          <a href="#" id="go_fullscreen">Maximize</a>
+        </li>
+        <li>
+          <a href="#" id="exit_fullscreen">Exit Fullscreen</a>
+        </li>
+        <li>
+          <label> Background Color:&nbsp;
+            <input type="color" id="bgcolor_picker"/>
+          </label>
+        </li>
+        <li>
+          <label> Accent Color:&nbsp;
+            <input type="color" id="accentColor_picker"/>
+          </label>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <canvas id="clock"></canvas>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script defer src="lib/scripts/clock.js"></script>
+</body>
+</html>
